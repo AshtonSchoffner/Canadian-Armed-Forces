@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_el: MyString
+  name_fr: MyString
+  year_made: 2020-10-15 15:46:24
+  quantity: 
+  organization: one
+
+two:
+  name_el: MyString
+  name_fr: MyString
+  year_made: 2020-10-15 15:46:24
+  quantity: 
+  organization: two
