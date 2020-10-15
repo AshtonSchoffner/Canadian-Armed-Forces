@@ -10,11 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_15_200936) do
+ActiveRecord::Schema.define(version: 2020_10_15_202516) do
 
   create_table "environments", force: :cascade do |t|
     t.string "environment_el"
     t.string "environment_fr"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "equipment", force: :cascade do |t|
+    t.string "name_el"
+    t.string "name_fr"
+    t.text "description_el"
+    t.text "description_fr"
+    t.integer "equipment_type_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["equipment_type_id"], name: "index_equipment_on_equipment_type_id"
+  end
+
+  create_table "equipment_types", force: :cascade do |t|
+    t.string "type_el"
+    t.string "type_fr"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
