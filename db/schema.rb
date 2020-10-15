@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_15_202516) do
+ActiveRecord::Schema.define(version: 2020_10_15_203146) do
 
   create_table "environments", force: :cascade do |t|
     t.string "environment_el"
@@ -33,6 +33,13 @@ ActiveRecord::Schema.define(version: 2020_10_15_202516) do
   create_table "equipment_types", force: :cascade do |t|
     t.string "type_el"
     t.string "type_fr"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "organizations", force: :cascade do |t|
+    t.string "name_el"
+    t.string "name_fr"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
