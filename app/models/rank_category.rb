@@ -1,0 +1,2 @@
+class RankCategory < ApplicationRecord
+end

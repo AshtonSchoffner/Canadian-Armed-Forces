@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_15_180653) do
+ActiveRecord::Schema.define(version: 2020_10_15_181453) do
 
   create_table "environments", force: :cascade do |t|
     t.string "environment_el"
     t.string "environment_fr"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "rank_categories", force: :cascade do |t|
+    t.string "category_el"
+    t.string "category_fr"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
