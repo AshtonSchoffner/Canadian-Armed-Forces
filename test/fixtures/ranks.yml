@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rank_el: MyString
+  rank_fr: MyString
+  rank_category: one
+  environment: one
+
+two:
+  rank_el: MyString
+  rank_fr: MyString
+  rank_category: two
+  environment: two

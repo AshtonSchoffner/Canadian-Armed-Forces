@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_15_181453) do
+ActiveRecord::Schema.define(version: 2020_10_15_200936) do
 
   create_table "environments", force: :cascade do |t|
     t.string "environment_el"
@@ -26,4 +26,17 @@ ActiveRecord::Schema.define(version: 2020_10_15_181453) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "ranks", force: :cascade do |t|
+    t.string "rank_el"
+    t.string "rank_fr"
+    t.integer "rank_category_id", null: false
+    t.integer "environment_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["environment_id"], name: "index_ranks_on_environment_id"
+    t.index ["rank_category_id"], name: "index_ranks_on_rank_category_id"
+  end
+
+  add_foreign_key "ranks", "environments"
+  add_foreign_key "ranks", "rank_categories"
 end
