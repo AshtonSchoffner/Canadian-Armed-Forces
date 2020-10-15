@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  op_name_el: MyString
+  op_name_fr: MyString
+  int_name_el: MyString
+  int_name_fr: MyString
+  description_el: MyText
+  description_fr: MyText
+  start_date: 2020-10-15 15:59:05
+  end_date: MyString
+  location: one
+
+two:
+  op_name_el: MyString
+  op_name_fr: MyString
+  int_name_el: MyString
+  int_name_fr: MyString
+  description_el: MyText
+  description_fr: MyText
+  start_date: 2020-10-15 15:59:05
+  end_date: MyString
+  location: two

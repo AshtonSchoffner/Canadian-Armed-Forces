@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_15_204624) do
+ActiveRecord::Schema.define(version: 2020_10_15_205905) do
 
   create_table "environments", force: :cascade do |t|
     t.string "environment_el"
@@ -35,6 +35,28 @@ ActiveRecord::Schema.define(version: 2020_10_15_204624) do
     t.string "type_fr"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.string "name_el"
+    t.string "name_fr"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "operations", force: :cascade do |t|
+    t.string "op_name_el"
+    t.string "op_name_fr"
+    t.string "int_name_el"
+    t.string "int_name_fr"
+    t.text "description_el"
+    t.text "description_fr"
+    t.datetime "start_date"
+    t.string "end_date"
+    t.integer "location_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["location_id"], name: "index_operations_on_location_id"
   end
 
   create_table "organizations", force: :cascade do |t|
@@ -73,6 +95,7 @@ ActiveRecord::Schema.define(version: 2020_10_15_204624) do
     t.index ["organization_id"], name: "index_vehicles_on_organization_id"
   end
 
+  add_foreign_key "operations", "locations"
   add_foreign_key "ranks", "environments"
   add_foreign_key "ranks", "rank_categories"
   add_foreign_key "vehicles", "organizations"
