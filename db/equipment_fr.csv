@@ -1,0 +1,46 @@
+Équipement des Forces armées canadiennes,,
+Type d'équipement,Nom de l'équipement,Description de l'équipement
+Aéronef,CF-188 Hornet,"Défense aérienne, supériorité aérienne, soutien tactique, entraînement, voltige aérienne et essais aérospatiaux."
+Aéronef,CC-115 Buffalo,Peut être exploité dans toutes les conditions météorologiques et décoller et atterrir sur des terrains accidentés.
+Aéronef,CH-149 Cormorant,"Seul hélicoptère SAR de l’ARC, il peut être exploité dans les conditions climatiques les plus difficiles."
+Aéronef,CH-146 Griffon,Il transporte des troupes et du matériel et est utilisé pour la surveillance et pour l’évacuation de blessés.
+Aéronef,CC-130 Hercules,"Transport de troupes, transport aérien tactique, ravitaillement en vol et instruction des membres d’équipage."
+Aéronef,CC-138 Twin Otter,"Cet aéronef à décollage et atterrissage courts (ADAC) peut se poser sur l’eau, la terre, la neige et la glace."
+Aéronef,CC-144 Challenger,"Transport de dignitaires, évacuation médicale et appui d’efforts humanitaires et diplomatiques."
+Aéronef,CC-177 Globemaster III,"Transport rapide de troupes, de marchandises et d’équipement de combat surdimensionné partout dans le monde."
+Aéronef,CC-130J Hercules,Transporte au plus 92 combattants et sert au transport aérien tactique (palettes et véhicules) et à l’entraînement.
+Aéronef,CC-150 Polaris,"Transport de passagers, de marchandises, de matériel médical ou de patients et ravitaillement en vol."
+Aéronef,CH-147F Chinook,Principalement utilisé pour le transport d’équipement et de personnel lors de missions au pays et à l’étranger.
+Aéronef,CP-140 Aurora,"Surveillance, lutte antisurface, renseignement maritime et terrestre, contrôle d’attaque et missions SAR."
+Aéronef,CH-148 Cyclone,"Utilisé pour la surveillance et les missions SAR, il deviendra le principal hélicoptère maritime embarqué du Canada."
+Aéronef,CH-124 Sea King,"Lutte anti-sous-marine, SAR, secours aux sinistrés, lutte antidrogue, surveillance des pêches, patrouilles antipollution."
+Aéronef,CT-142 Dash-8,Aéronef biturbopropulseur utilisé pour enseigner aux apprentis-pilotes la navigation et les tactiques aériennes.
+Aéronef,CT-156 Harvard II,Idéal pour aider les nouveaux pilotes à passer d’un entraînement de base en pilotage à un avion-école à réaction.
+Aéronef,CT-155 Hawk,Cet aéronef se prête à une vaste gamme de missions d’entraînement haute performance.
+Aéronef,CH-139 Jet Ranger,Hélicoptère-école monomoteur utilisé pour aider les apprentis-pilotes d’hélicoptère à obtenir leur brevet de pilote.
+Aéronef,CT-114 Tutor,"D’abord prévu pour l’entraînement des apprentis-pilotes, il est utilisé par l’équipe de démonstration des Snowbirds."
+Véhicule,Buffalo,Ce véhicule sert à vérifier la présence de dispositifs explosifs de circonstance (IED) enfouis.
+Véhicule,Cougar,Ce véhicule transporte des spécialistes de la neutralisation des explosifs et munitions et leurs outils.
+Véhicule,G-Wagen,"Il permet un transport tactique pour le commandement, le contrôle, la liaison, la reconnaissance et la police militaire."
+Véhicule,Husky,Ce véhicule détecte les menaces possibles de dispositifs explosifs de circonstance enfouis (IED).
+Véhicule,Leopard 2A4,"Ce char de combat principal de plusieurs pays de l’OTAN offre puissance de tir, protection, manœuvrabilité et mobilité."
+Véhicule,Véhicule blindé Bison,"Ce véhicule à huit roues à usages multiples peut servir, notamment, d’ambulance et de poste de commandement."
+Véhicule,Véhicule blindé Coyote,Ce véhicule de reconnaissance durable peut résister à d’intenses tirs d’artillerie.
+Véhicule,Véhicle blindé de dépannage (VBD) Taurus,"Il récupère et remorque les véhicules embourbés, en panne ou mis hors de combat par l’ennemi."
+Véhicule,Véhicle blindé léger (VBL) III,Il offre une protection supérieure contre les explosifs et le tir d’artillerie et se déplace à très grande vitesse.
+Véhicule,Véhicule de soutien léger à roues (VSLR),Il offre un soutien administratif et logistique aux unités et aux brigades.
+Véhicule,Véhicule de transport chenillé BV 206,Ce véhicule amphibie de transport de troupes peut être exploité sur route et hors route dans tous les climats.
+Flotte,Frégates canadiennes de patrouille,"Conçus pour la lutte anti-sous-marine et antisurface, ces navires sont améliorés pour faire face à de nouvelles menaces."
+Flotte,Sous-marins de patrouille à long rayon d'action,"Ces navires patrouillent dans nos eaux à l’appui de missions antiterrorisme, antidrogue et de surveillance des pêches."
+Flotte,Navires de défense côtière,Les navires de défense côtière sont souples et ont comme mission principale la surveillance et les patrouilles côtières.
+Flotte,Patrouilleurs d'instruction,Ils servent aux patrouilles en eaux côtières et missions de recherche et sauvetage et aident les bateaux en détresse.
+Arme,Carabine C8A3,"Semblable au fusil C7A2, elle comporte un viseur holographique supplémentaire pour le combat rapproché."
+Arme,"Fusil automatique C7A2 de 5,56 mm",Arme personnelle utilisée par les Forces armées canadiennes à capacité de tir coup par coup ou automatique.
+Arme,"Fusil pour tireur d'élite C3A1 de 7,62 mm",Il peut tirer de manière très précise sur un objectif à une distance d’au plus 800 m.
+Arme,"Mitrailleuse moyenne C6 de 7,62 mm",Tire jusqu’à 1100 munitions par minute et peut être transportée par des soldats ou montée sur des véhicules blindés.
+Arme,Mitrailleuse légère C9A2,"Principalement utilisée pour l’appui de l’infanterie, elle permet seulement un tir entièrement automatique."
+Arme,Mitrailleuse lourde Browning M2 de calibre .50,Elle peut tirer des munitions perforantes traçantes à partir de véhicules blindés ou du niveau du sol.
+Arme,Mortier de 81 mm,Tire des obus sur une trajectoire à grand arc et permet l’appui de troupes tout en demeurant à couvert.
+Arme,Obusier C3 de 105 mm,"Tir de munitions à portée accrue jusqu’à 18 km, actionnement manuel, chargement unique et refroidissement à l’air."
+Arme,Obusier remorqué léger M777 de 155 mm,"Plus légère, plus petite, mais plus puissante que les autres armes du même type, cette arme est très précise."
+Arme,Pistolet Browning de 9 mm,"Conçu pour le combat rapproché, il est semi-automatique, fonctionne par recul et est alimenté par chargeur."
