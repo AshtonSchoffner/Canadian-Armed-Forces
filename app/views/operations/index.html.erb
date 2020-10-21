@@ -1,7 +1,7 @@
 <%= render partial: "shared/header" %>
 <h2>Operations - Opérations</h2>
 <% @operations.each do |operation| %>
-  <div>
+  <div class="operation">
     <h3>Operation Name (OP): <%= link_to operation.op_name_el, operation %></h3>
     <h3>Nom de l'opération (OP): <%= link_to operation.op_name_fr, operation %></h3>
     <p>
@@ -14,7 +14,7 @@
     </p>
     <p>
       <strong>Start Date/Date de Début: </strong>
-      <%= operation.start_date %>
+      <%= operation.start_date.strftime("%d/%m/%Y") %>
     </p>
     <p>
       <strong>End Date/Date de Fin: </strong>

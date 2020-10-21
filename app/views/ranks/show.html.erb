@@ -1,0 +1,23 @@
+<%= render partial: "shared/header" %>
+<h2>Rank - Grade</h2>
+
+<div class="rank">
+  <h3><%= @rank.rank_el %></h3>
+  <h3><%= @rank.rank_fr %></h3>
+  <p>
+    <strong>Rank Category: </strong>
+    <%= @rank.rank_category.category_el %>
+  </p>
+  <p>
+    <strong>Catégorie de Classement: </strong>
+    <%= @rank.rank_category.category_fr %>
+  </p>
+  <p>
+    <strong>Environment: </strong>
+    <%= @rank.environment.environment_el %>
+  </p>
+  <p>
+    <strong>Environnement: </strong>
+    <%= @rank.environment.environment_fr %>
+  </p>
+</div>
