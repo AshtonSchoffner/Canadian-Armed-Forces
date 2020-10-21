@@ -1,0 +1,47 @@
+<%= render partial: "shared/header" %>
+<h3>
+  Operation Name (OP):
+  <%= @operation.op_name_el %>
+</h3>
+<h3>
+  Nom de l'Opération (OP):
+  <%= @operation.op_name_fr %>
+</h3>
+<h3>
+  International Operation Name:
+  <%= @operation.int_name_el %>
+</h3>
+<h3>
+  Nom de l'Opération Internationale:
+  <%= @operation.int_name_fr %>
+</h3>
+
+<p>
+  <strong>Location: </strong>
+  <%= @operation.location.name_el %>
+</p>
+<p>
+  <strong>Emplacement: </strong>
+  <%= @operation.location.name_fr %>
+</p>
+
+<p>
+  <strong>Start Date/Date de Début: </strong>
+  <%= @operation.start_date %>
+</p>
+
+<p>
+  <strong>End Date/Date de Fin: </strong>
+  <%= @operation.end_date %>
+</p>
+
+<p>
+  <strong>Description: </strong>
+  <%= @operation.description_el %>
+</p>
+
+<p>
+  <strong>Description: </strong>
+  <%= @operation.description_fr %>
+</p>
+
