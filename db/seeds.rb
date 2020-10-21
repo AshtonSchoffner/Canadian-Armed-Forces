@@ -28,7 +28,7 @@ operations.each do |operation|
     int_name_el:    operation["International Operation Name"],
     int_name_fr:    operation["Nom de l'opération internationale"],
     description_el: operation["Description"],
-    description_fr: operation["Description"],
+    description_fr: operation["Description_fr"],
     start_date:     operation["Start Date/date de début"],
     end_date:       operation["End Date/date de fin"]
   )
@@ -82,7 +82,7 @@ ranks_fr = load_data("rank_fr.csv")
 index = 0
 while index < ranks_el.length
   rank_category = RankCategory.find_or_create_by(
-    category_el: category_el = ranks_el[index]["Rank Appointment Insignia"],
+    category_el: ranks_el[index]["Rank Appointment Insignia"],
     category_fr: ranks_fr[index]["Insignes de grade et de Fonction des Forces canadiennes"]
   )
 

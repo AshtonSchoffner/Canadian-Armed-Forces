@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_15_225627) do
+ActiveRecord::Schema.define(version: 2020_10_21_051025) do
 
   create_table "environments", force: :cascade do |t|
     t.string "environment_el"
@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 2020_10_15_225627) do
     t.string "int_name_fr"
     t.text "description_el"
     t.text "description_fr"
-    t.datetime "start_date"
+    t.string "start_date"
     t.string "end_date"
     t.integer "location_id", null: false
     t.datetime "created_at", precision: 6, null: false
