@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class OperationsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
@@ -10,5 +10,4 @@ class OperationsControllerTest < ActionDispatch::IntegrationTest
     get operations_show_url
     assert_response :success
   end
-
 end
