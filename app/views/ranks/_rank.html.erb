@@ -1,0 +1,49 @@
+<div class="rank">
+  <% if rank_link %>
+    <h3><%= link_to rank.rank_el, rank %></h3>
+    <h3><%= link_to rank.rank_fr, rank %></h3>
+  <% else %>
+    <h3><%= rank.rank_el %></h3>
+    <h3><%= rank.rank_fr %></h3>
+  <% end %>
+
+  <% if category_link %>
+    <p>
+      <strong>Rank Category: </strong>
+      <%= rank.rank_category.category_el%>
+    </p>
+    <p>
+      <strong>Catégorie de Classement: </strong>
+      <%= rank.rank_category.category_fr %>
+    </p>
+  <% else %>
+    <p>
+      <strong>Rank Category: </strong>
+      <%= rank.rank_category.category_el %>
+    </p>
+    <p>
+      <strong>Catégorie de Classement: </strong>
+      <%= rank.rank_category.category_fr %>
+    </p>
+  <% end %>
+
+  <% if environment_link %>
+    <p>
+      <strong>Environment: </strong>
+      <%= link_to rank.environment.environment_el, rank.environment %>
+    </p>
+    <p>
+      <strong>Environnement: </strong>
+      <%= link_to rank.environment.environment_fr, rank.environment %>
+    </p>
+  <% else %>
+    <p>
+      <strong>Environment: </strong>
+      <%= rank.environment.environment_el %>
+    </p>
+    <p>
+      <strong>Environnement: </strong>
+      <%= rank.environment.environment_fr %>
+    </p>
+  <% end %>
+</div>

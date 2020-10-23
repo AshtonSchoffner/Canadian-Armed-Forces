@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get "about/index"
+  resources :environments, only: %i[show]
   resources :locations, only: %i[show]
   resources :equipment, only: %i[index show]
   resources :ranks, only: %i[index show]
