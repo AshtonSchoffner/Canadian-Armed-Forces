@@ -1,16 +1,4 @@
 <%= render partial: "shared/header" %>
 <h2>Equipment - Équipement</h2>
-<% @equipment.each do |equipment| %>
-  <div class="equipment">
-    <h3><%= link_to equipment.name_el, equipment %></h3>
-    <h3><%= link_to equipment.name_fr, equipment %></h3>
-    <p>
-      <strong>Equipment Type: </strong>
-      <%= equipment.equipment_type.type_el %>
-    </p>
-    <p>
-      <strong>Type d'équipement: </strong>
-      <%= equipment.equipment_type.type_fr %>
-    </p>
-  </div>
-<% end %>
+
+<%= render partial: "equipment", collection: @equipment, locals: {show_description: false, link_type: true,  link_equipment: true} %>

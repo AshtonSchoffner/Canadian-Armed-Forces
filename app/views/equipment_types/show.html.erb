@@ -1,0 +1,7 @@
+<%= render partial: "shared/header" %>
+<h2>
+  <%= @equipment_type.type_el %> -
+  <%= @equipment_type.type_fr %>
+</h2>
+
+<%= render partial: "equipment/equipment", collection: @equipment_type.equipment, locals: {show_description: false, link_type: false, link_equipment: true} %>

@@ -1,20 +1,4 @@
 <%= render partial: "shared/header" %>
 <h2>Equipment - Équipement</h2>
-<h3><%= @equipment.name_el %></h3>
-<h3><%= @equipment.name_fr %></h3>
-<p>
-  <strong>Equipment Type: </strong>
-  <%= @equipment.equipment_type.type_el %>
-</p>
-<p>
-  <strong>Type d'équipement: </strong>
-  <%= @equipment.equipment_type.type_fr %>
-</p>
-<p>
-  <strong>Description: </strong>
-  <%= @equipment.description_el %>
-</p>
-<p>
-  <strong>Description: </strong>
-  <%= @equipment.description_fr %>
-</p>
+
+<%= render partial: "equipment", object: @equipment, locals: {show_description: true, link_type: true,  link_equipment: false} %>
