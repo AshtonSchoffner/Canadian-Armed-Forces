@@ -10,11 +10,11 @@
   <% if category_link %>
     <p>
       <strong>Rank Category: </strong>
-      <%= rank.rank_category.category_el%>
+      <%= link_to rank.rank_category.category_el, rank.rank_category %>
     </p>
     <p>
       <strong>Catégorie de Classement: </strong>
-      <%= rank.rank_category.category_fr %>
+      <%= link_to rank.rank_category.category_fr, rank.rank_category %>
     </p>
   <% else %>
     <p>

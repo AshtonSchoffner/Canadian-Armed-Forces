@@ -1,0 +1,2 @@
+module RankCategoriesHelper
+end
