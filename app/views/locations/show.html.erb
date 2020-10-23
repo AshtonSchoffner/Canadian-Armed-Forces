@@ -1,6 +1,6 @@
 <%= render partial: "shared/header" %>
 <h2><%= @location.name_el %> - <%= @location.name_fr %></h2>
-<% @location.operations.order_by("start_date DESC").each do |operation| %>
+<% @location.operations.order("start_date DESC").each do |operation| %>
   <div>
     <h3><%= link_to operation.op_name_el, operation %></h3>
     <h3><%= link_to operation.op_name_fr, operation %></h3>
