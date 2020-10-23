@@ -5,5 +5,4 @@ class AboutControllerTest < ActionDispatch::IntegrationTest
     get about_index_url
     assert_response :success
   end
-
 end

@@ -10,5 +10,4 @@ class EquipmentControllerTest < ActionDispatch::IntegrationTest
     get equipment_show_url
     assert_response :success
   end
-
 end

@@ -6,11 +6,11 @@
     <h3>Nom de l'opération (OP): <%= link_to operation.op_name_fr, operation %></h3>
     <p>
       <strong>Location: </strong>
-      <%= operation.location.name_el %>
+      <%= link_to operation.location.name_el, operation.location %>
     </p>
     <p>
       <strong>Emplacement: </strong>
-      <%= operation.location.name_fr %>
+      <%= link_to operation.location.name_fr, operation.location %>
     </p>
     <p>
       <strong>Start Date/Date de Début: </strong>
