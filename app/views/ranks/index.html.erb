@@ -1,3 +1,2 @@
-<h2>Ranks - Grades</h2>
-
+<%= render partial: "header", locals: {single_rank: false}%>
 <%= render partial: "rank", collection: @ranks,  locals: {rank_link: true, environment_link: true, category_link: true} %>

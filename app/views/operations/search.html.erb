@@ -1,4 +1,4 @@
-<%= render partial: "header" %>
+<%= render partial: "header", locals: {single_op: @operations.count == 1} %>
 
 <h3>Searching for: <%= params[:keywords] %></h3>
 <h3>Found <%= pluralize(@operations.count, "Operation") %></h3>

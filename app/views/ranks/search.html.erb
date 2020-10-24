@@ -1,0 +1,6 @@
+<%= render partial: "header", locals: {single_rank: @ranks.count == 1} %>
+
+<h3>Searching for: <%= params[:keywords] %></h3>
+<h3>Found <%= pluralize(@ranks.count, "Rank") %></h3>
+
+<%= render partial: "rank", collection: @ranks, locals: {rank_link: true, environment_link: true, category_link: true}%>

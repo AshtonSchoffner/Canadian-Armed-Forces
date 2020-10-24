@@ -6,4 +6,9 @@ class RanksController < ApplicationController
   def show
     @rank = Rank.find(params[:id])
   end
+
+  def search
+    wildcard_search = "%#{params[:keywords]}%"
+    @ranks = Rank.where("rank_el LIKE ? OR rank_fr LIKE ?", wildcard_search, wildcard_search)
+  end
 end

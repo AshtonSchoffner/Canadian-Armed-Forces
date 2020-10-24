@@ -1,0 +1,7 @@
+<% if single_rank %>
+  <h2>Rank - Grade</h2>
+<% else %>
+  <h2>Ranks - Grades</h2>
+<% end %>
+
+<%= render partial: "shared/search_bar", locals: {search_path: search_ranks_path, placeholder: "Search for Ranks - Rechercher des grades"} %>

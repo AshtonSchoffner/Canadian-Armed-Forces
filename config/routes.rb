@@ -5,7 +5,11 @@ Rails.application.routes.draw do
   resources :environments, only: %i[show]
   resources :locations, only: %i[show]
   resources :equipment, only: %i[index show]
-  resources :ranks, only: %i[index show]
+  resources :ranks, only: %i[index show] do
+    collection do
+      get "search"
+    end
+  end
   resources :operations, only: %i[index show] do
     collection do
       get "search"

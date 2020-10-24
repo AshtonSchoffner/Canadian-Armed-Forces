@@ -1,12 +1,7 @@
-<h2>Operation - Opération</h2>
-
-<%= form_with(url: search_operations_path, method: :get, local: true) do %>
-  <div>
-    <div>
-      <%= text_field_tag(:keywords, nil, placeholder: "Search for Operations - Rechercher des opérations") %>
-    </div>
-    <div>
-      <%= submit_tag("Search - Chercher") %>
-    </div>
-  </div>
+<% if single_op %>
+  <h2>Operation - Opération</h2>
+<% else %>
+  <h2>Operations - Opérations</h2>
 <% end %>
+
+<%= render partial: "shared/search_bar", locals: {search_path: search_operations_path, placeholder: "Search for Operations - Rechercher des opérations"} %>

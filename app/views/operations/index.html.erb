@@ -1,2 +1,2 @@
-<%= render partial: "header" %>
+<%= render partial: "header", locals: {single_op: false} %>
 <%= render partial: "operation", collection: @operations, locals: {detailed: false, show_location: true, link_op: true}%>
