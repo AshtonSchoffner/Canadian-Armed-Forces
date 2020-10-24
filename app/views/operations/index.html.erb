@@ -1,24 +1,2 @@
-<%= render partial: "shared/header" %>
-<h2>Operations - Opérations</h2>
-<% @operations.each do |operation| %>
-  <div class="operation">
-    <h3>Operation Name (OP): <%= link_to operation.op_name_el, operation %></h3>
-    <h3>Nom de l'opération (OP): <%= link_to operation.op_name_fr, operation %></h3>
-    <p>
-      <strong>Location: </strong>
-      <%= link_to operation.location.name_el, operation.location %>
-    </p>
-    <p>
-      <strong>Emplacement: </strong>
-      <%= link_to operation.location.name_fr, operation.location %>
-    </p>
-    <p>
-      <strong>Start Date/Date de Début: </strong>
-      <%= operation.start_date.strftime("%d/%m/%Y") %>
-    </p>
-    <p>
-      <strong>End Date/Date de Fin: </strong>
-      <%= operation.end_date %>
-    </p>
-  </div>
-<% end %>
+<%= render partial: "header" %>
+<%= render partial: "operation", collection: @operations, locals: {detailed: false, show_location: true, link_op: true}%>

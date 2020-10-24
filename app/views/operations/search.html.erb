@@ -1,0 +1,6 @@
+<%= render partial: "header" %>
+
+<h3>Searching for: <%= params[:keywords] %></h3>
+<h3>Found <%= pluralize(@operations.count, "Operation") %></h3>
+
+<%= render partial: "operation", collection: @operations, locals: {detailed: false, show_location: true, link_op: true}%>

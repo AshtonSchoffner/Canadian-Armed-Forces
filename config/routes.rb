@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   resources :locations, only: %i[show]
   resources :equipment, only: %i[index show]
   resources :ranks, only: %i[index show]
-  resources :operations, only: %i[index show]
+  resources :operations, only: %i[index show] do
+    collection do
+      get "search"
+    end
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: "home#index"
 end
