@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   resources :rank_categories, only: %i[show]
   resources :environments, only: %i[show]
   resources :locations, only: %i[show]
-  resources :equipment, only: %i[index show]
+  resources :equipment, only: %i[index show] do
+    collection do
+      get "search"
+    end
+  end
   resources :ranks, only: %i[index show] do
     collection do
       get "search"

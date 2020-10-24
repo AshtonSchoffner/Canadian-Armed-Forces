@@ -1,0 +1,9 @@
+<%= render partial: "header", locals: {single_op: @equipment.count == 1} %>
+
+<h3>Searching for: <%= params[:keywords] %></h3>
+<h3>Found: <%= pluralize(@equipment.count, "Equipment") %> </h3>
+
+<h3>À la recherche de: <%= params[:keywords] %></h3>
+<h3>A trouvé: <%= pluralize(@equipment.count, "Équipement") %> </h3>
+
+<%= render partial: "equipment", collection: @equipment, locals: {link_equipment: true, link_type: true, show_description: false}%>
