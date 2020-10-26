@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>CanadianArmedForces</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title><%= yield(:html_title) + " - " if content_for?(:html_title) %>Canadian Armed Forces</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,16 +13,23 @@
   </head>
 
   <body>
-    <h1>Canadian Armed Forces Information</h1>
-    <h1>Renseignements sur les Forces Armées Canadiennes</h1>
-    <ul>
-      <li><%= link_to "Home Page - Page Principale", root_path %></li>
-      <li><%= link_to "About - Sur", about_index_path %></li>
-      <li><%= link_to "Operations - Opérations", operations_path %></li>
-      <li><%= link_to "Ranks - Grades", ranks_path %></li>
-      <li><%= link_to "Equipment - Équipement", equipment_index_path %></li>
-    </ul>
+    <div class="container">
+      <div class="container text-center">
+        <h1>Canadian Armed Forces Information</h1>
+        <h1>Renseignements sur les Forces Armées Canadiennes</h1>
+      </div>
 
-    <%= yield %>
+      <ul class="nav nav-tabs nav-fill justify-content-center pb-2 pt-4">
+        <li class="nav-item"><%= link_to "Home Page - Page Principale", root_path %></li>
+        <li class="nav-item"><%= link_to "About - Sur", about_index_path %></li>
+        <li class="nav-item"><%= link_to "Operations - Opérations", operations_path %></li>
+        <li class="nav-item"><%= link_to "Ranks - Grades", ranks_path %></li>
+        <li class="nav-item"><%= link_to "Equipment - Équipement", equipment_index_path %></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

@@ -1,9 +1,25 @@
-<%= render partial: "header", locals: {single_rank: @ranks.count == 1} %>
+<%= render partial: "shared/header", locals: {
+  single: false,
+  title_single: "Rank - Grade",
+  title_plural: "Ranks - Grades",
+  search_path: search_ranks_path,
+  placeholder: "Search for Ranks - Rechercher des grades"
+}%>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h3>Searching for: <%= params[:keywords] %></h3>
+      <h3>Found: <%= pluralize(@ranks.count, "Rank") %></h3>
+    </div>
+    <div class="col-6 text-right">
+      <h3>À la recherche de: <%= params[:keywords] %></h3>
+      <h3>A trouvé: <%= pluralize(@ranks.count, "Rank") %></h3>
+    </div>
+  </div>
+</div>
 
-<h3>Searching for: <%= params[:keywords] %></h3>
-<h3>Found: <%= pluralize(@ranks.count, "Rank") %></h3>
-
-<h3>À la recherche de: <%= params[:keywords] %></h3>
-<h3>A trouvé: <%= pluralize(@ranks.count, "Rank") %></h3>
-
-<%= render partial: "rank", collection: @ranks, locals: {rank_link: true, environment_link: true, category_link: true}%>
+<div class="container">
+  <div class="row card-group">
+    <%= render partial: "rank", collection: @ranks,  locals: {rank_link: true, environment_link: true, category_link: true} %>
+  </div>
+</div>

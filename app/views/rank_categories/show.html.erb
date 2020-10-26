@@ -3,4 +3,8 @@
   <%= @rank_category.category_fr%>
 </h2>
 
-<%= render partial: "ranks/rank", collection: @rank_category.ranks, locals: {rank_link: true, environment_link: true, category_link: false} %>
+<div class="container">
+  <div class="row">
+    <%= render partial: "ranks/rank", collection: @rank_category.ranks, locals: {rank_link: true, environment_link: true, category_link: false} %>
+  </div>
+</div>
