@@ -1,7 +1,7 @@
-<% if single_op %>
-  <h2>Operation - Opération</h2>
-<% else %>
-  <h2>Operations - Opérations</h2>
-<% end %>
-
-<%= render partial: "shared/search_bar", locals: {search_path: search_operations_path, placeholder: "Search for Operations - Rechercher des opérations"} %>
+<%= render partial: "shared/header", locals: {
+  single: single,
+  title_single: "Operation - Opération",
+  title_plural: "Operations - Opérations",
+  search_path: search_operations_path,
+  placeholder: "Search for Operations - Rechercher des opérations"
+}%>

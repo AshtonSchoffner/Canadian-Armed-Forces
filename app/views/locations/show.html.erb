@@ -1,3 +1,7 @@
 <h2><%= @location.name_el %> - <%= @location.name_fr %></h2>
 
-<%= render partial: "operations/operation", collection: @location.operations.order("start_date DESC"), locals: {detailed: false, show_location: false, link_op: true} %>
+<div class="container">
+  <div class="row">
+    <%= render partial: "operations/operation", collection: @location.operations.order("start_date DESC"), locals: {detailed: false, show_location: false, link_op: true} %>
+  </div>
+</div>

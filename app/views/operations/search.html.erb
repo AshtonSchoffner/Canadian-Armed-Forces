@@ -1,4 +1,4 @@
-<%= render partial: "header", locals: {single_op: @operations.count == 1} %>
+<%= render partial: "header", locals: {single: @operations.count == 1} %>
 
 <h3>Searching for: <%= params[:keywords] %></h3>
 <h3>Found: <%= pluralize(@operations.count, "Operation") %></h3>
@@ -6,4 +6,8 @@
 <h3>À la recherche de: <%= params[:keywords] %></h3>
 <h3>A trouvé: <%= pluralize(@operations.count, "Opération") %></h3>
 
-<%= render partial: "operation", collection: @operations, locals: {detailed: false, show_location: true, link_op: true}%>
+<div class="container">
+  <div class="row">
+    <%= render partial: "operation", collection: @operations, locals: {detailed: false, show_location: true, link_op: true}%>
+  </div>
+</div>

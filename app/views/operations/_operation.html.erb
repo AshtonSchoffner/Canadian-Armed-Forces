@@ -1,65 +1,69 @@
-<div>
-  <% if link_op%>
-    <h3>
-      Operation Name (OP):
-      <%= link_to operation.op_name_el, operation %>
-    </h3>
-    <h3>
-      Nom de l'Opération (OP):
-      <%= link_to operation.op_name_fr, operation %>
-    </h3>
-  <% else %>
-      <h3>
-        Operation Name (OP):
-        <%= operation.op_name_el%>
-      </h3>
-      <h3>
-        Nom de l'Opération (OP):
-        <%= operation.op_name_fr%>
-      </h3>
-  <% end %>
+<div class="col-4 py-3">
+  <div class="card">
+    <div class="card-body">
+      <% if link_op%>
+        <h3>
+          Operation Name (OP):
+          <%= link_to operation.op_name_el, operation %>
+        </h3>
+        <h3>
+          Nom de l'Opération (OP):
+          <%= link_to operation.op_name_fr, operation %>
+        </h3>
+      <% else %>
+          <h3>
+            Operation Name (OP):
+            <%= operation.op_name_el%>
+          </h3>
+          <h3>
+            Nom de l'Opération (OP):
+            <%= operation.op_name_fr%>
+          </h3>
+      <% end %>
 
-  <% if detailed %>
-    <h3>
-      International Operation Name:
-      <%= operation.int_name_el %>
-    </h3>
-    <h3>
-      Nom de l'Opération Internationale:
-      <%= operation.int_name_fr %>
-    </h3>
-  <% end %>
+      <% if detailed %>
+        <h3>
+          International Operation Name:
+          <%= operation.int_name_el %>
+        </h3>
+        <h3>
+          Nom de l'Opération Internationale:
+          <%= operation.int_name_fr %>
+        </h3>
+      <% end %>
 
-  <% if show_location %>
-    <p>
-      <strong>Location: </strong>
-      <%= link_to operation.location.name_el, operation.location %>
-    </p>
-    <p>
-      <strong>Emplacement: </strong>
-      <%= link_to operation.location.name_fr, operation.location%>
-    </p>
-  <% end %>
+      <% if show_location %>
+        <p>
+          <strong>Location: </strong>
+          <%= link_to operation.location.name_el, operation.location %>
+        </p>
+        <p>
+          <strong>Emplacement: </strong>
+          <%= link_to operation.location.name_fr, operation.location%>
+        </p>
+      <% end %>
 
-  <p>
-    <strong>Start Date/Date de Début: </strong>
-    <%= operation.start_date.strftime("%d/%m/%Y") %>
-  </p>
+      <p>
+        <strong>Start Date/Date de Début: </strong>
+        <%= operation.start_date.strftime("%d/%m/%Y") %>
+      </p>
 
-  <p>
-    <strong>End Date/Date de Fin: </strong>
-    <%= operation.end_date %>
-  </p>
+      <p>
+        <strong>End Date/Date de Fin: </strong>
+        <%= operation.end_date %>
+      </p>
 
-  <% if detailed %>
-    <p>
-      <strong>Description: </strong>
-      <%= operation.description_el %>
-    </p>
+      <% if detailed %>
+        <p>
+          <strong>Description: </strong>
+          <%= operation.description_el %>
+        </p>
 
-    <p>
-      <strong>Description: </strong>
-      <%= operation.description_fr %>
-    </p>
-  <% end %>
+        <p>
+          <strong>Description: </strong>
+          <%= operation.description_fr %>
+        </p>
+      <% end %>
+    </div>
+  </div>
 </div>

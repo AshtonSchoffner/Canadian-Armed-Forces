@@ -3,4 +3,9 @@
   <%= @environment.environment_fr%>
 </h2>
 
-<%= render partial: "ranks/rank", collection: @environment.ranks, locals: {rank_link: true, environment_link: false, category_link: true} %>
+<div class="container">
+  <div class="row">
+    <%= render partial: "ranks/rank", collection: @environment.ranks, locals: {rank_link: true, environment_link: false, category_link: true} %>
+  </div>
+</div>
+

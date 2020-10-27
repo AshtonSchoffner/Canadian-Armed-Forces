@@ -1,6 +1,6 @@
 <div class="container py-3">
   <div class="row">
-    <div class="col">
+    <div class="col-5">
       <% if single %>
         <h2><%= title_single %></h2>
       <% else %>
@@ -8,7 +8,7 @@
       <% end %>
     </div>
 
-    <div class="col">
+    <div class="col-7">
       <%= form_with(url: search_path, method: :get, local: true, class: "row") do %>
         <div class="col-8">
           <%= text_field_tag(:keywords, nil, placeholder: placeholder, class: "w-100") %>

@@ -1,9 +1,3 @@
-<%= render partial: "shared/header", locals: {
-  single: true,
-  title_single: "Rank - Grade",
-  title_plural: "Ranks - Grades",
-  search_path: search_ranks_path,
-  placeholder: "Search for Ranks - Rechercher des grades"
-}%>
+<%= render partial: "header", locals: {single: true} %>
 
 <%= render partial: "rank", object: @rank,  locals: {rank_link: false, environment_link: true, category_link: true} %>

@@ -1,2 +1,7 @@
-<%= render partial: "header", locals: {single_op: true} %>
-<%= render partial: "operation", object: @operation, locals: {detailed: true, show_location: true, link_op: false}%>
+<%= render partial: "header", locals: {single: true} %>
+
+<div class="container">
+  <div class="row">
+    <%= render partial: "operation", object: @operation, locals: {detailed: true, show_location: true, link_op: false}%>
+  </div>
+</div>
