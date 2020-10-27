@@ -1,3 +1,7 @@
-<%= render partial: "header" %>
+<%= render partial: "header", locals: {single: false} %>
 
-<%= render partial: "equipment", collection: @equipment, locals: {show_description: false, link_type: true,  link_equipment: true} %>
+<div class="container">
+  <div class="row">
+    <%= render partial: "equipment", collection: @equipment, locals: {show_description: false, link_type: true,  link_equipment: true} %>
+  </div>
+</div>
