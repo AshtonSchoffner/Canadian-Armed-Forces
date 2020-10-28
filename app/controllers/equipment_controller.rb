@@ -1,6 +1,6 @@
 class EquipmentController < ApplicationController
   def index
-    @equipment = Equipment.includes(:equipment_type)
+    @equipment = Equipment.includes(:equipment_type).page(params[:page]).per(15)
   end
 
   def show

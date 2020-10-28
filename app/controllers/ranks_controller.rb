@@ -1,6 +1,6 @@
 class RanksController < ApplicationController
   def index
-    @ranks = Rank.includes(:rank_category, :environment)
+    @ranks = Rank.includes(:rank_category, :environment).page(params[:page]).per(15)
   end
 
   def show

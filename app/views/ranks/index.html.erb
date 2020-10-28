@@ -1,7 +1,9 @@
 <%= render partial: "header", locals:{single: false} %>
 
 <div class="container">
+  <%= paginate(@ranks) %>
   <div class="row">
     <%= render partial: "rank", collection: @ranks,  locals: {rank_link: true, environment_link: true, category_link: true} %>
   </div>
+  <%= paginate(@ranks) %>
 </div>

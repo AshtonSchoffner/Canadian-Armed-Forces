@@ -1,6 +1,6 @@
 class OperationsController < ApplicationController
   def index
-    @operations = Operation.includes(:location).order("start_date DESC")
+    @operations = Operation.includes(:location).order("start_date DESC").page(params[:page]).per(15)
   end
 
   def show

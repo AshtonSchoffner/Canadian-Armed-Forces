@@ -1,7 +1,9 @@
 <%= render partial: "header", locals: {single: false} %>
 
 <div class="container">
-  <div class="row">
-    <%= render partial: "equipment", collection: @equipment, locals: {show_description: false, link_type: true,  link_equipment: true} %>
-  </div>
+  <%= paginate(@equipment) %>
+    <div class="row">
+      <%= render partial: "equipment", collection: @equipment, locals: {show_description: false, link_type: true,  link_equipment: true} %>
+    </div>
+  <%= paginate(@equipment) %>
 </div>
